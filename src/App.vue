@@ -1,15 +1,18 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <Banner />
   <Prompt />
 </template>
 
 <script>
+import Banner from './components/Banner.vue'
 import Prompt from './components/Prompt.vue'
 
 export default {
   name: 'App',
   components: {
-    Prompt
+    Prompt,
+    Banner,
   }
 }
 </script>
