@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import dictionary from '../dictionary.json';
+import dictionary from '../commonDictionary.json';
 
 export default {
   name: 'Prompt',
@@ -44,11 +44,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .prompt {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 500px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+h3 {
+  white-space: pre-line;
 }
 
 button {
