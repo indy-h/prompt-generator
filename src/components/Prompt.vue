@@ -43,5 +43,28 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.prompt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+}
 
+button {
+  display: inline-block;
+  width: 250px;
+  margin: 5px 0;
+  padding: 1em;
+  border: solid 0.15em transparent;
+  border-radius: 2em;
+  background: #ffa9bb;
+  color: #1b2d4b;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
 </style>
