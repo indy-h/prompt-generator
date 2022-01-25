@@ -1,5 +1,4 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <Banner />
   <Prompt />
 </template>
@@ -31,5 +30,26 @@ body {
   text-align: center;
   margin: 0;
   color: #1b2d4b;
+}
+
+h3 {
+  white-space: pre-line;
+}
+
+button {
+  display: inline-block;
+  width: 250px;
+  margin: 5px 0;
+  padding: 1em;
+  border: solid 0.15em transparent;
+  border-radius: 2em;
+  background: #ffa9bb;
+  color: #1b2d4b;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 </style>
