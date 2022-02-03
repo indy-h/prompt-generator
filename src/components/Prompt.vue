@@ -6,22 +6,22 @@
 </template>
 
 <script>
-import commonWords from '../../dataset/commonWords.js';
+import promptWords from '../../dataset/promptWords.js';
 
 export default {
   name: 'Prompt',
   data() {
     return {
-      commonWords,
-      commonWordsLength: 0,
+      promptWords: [],
+      promptWordsLength: 0,
       randomEntry: {
         word: '',
       },
     }
   },
   mounted() {
-    this.commonWords = commonWords;
-    this.commonWordsLength = this.commonWords.length;
+    this.promptWords = promptWords;
+    this.promptWordsLength = this.promptWords.length;
     this.getRandomEntry();
   },
   methods: {
@@ -29,9 +29,9 @@ export default {
       return Math.floor(Math.random() * (max - min + 1) + min);
     },
     getRandomEntry() {
-      const randomNumber = this.randomIntRange(0, this.commonWordsLength);
+      const randomNumber = this.randomIntRange(0, this.promptWordsLength);
       this.randomEntry = {
-        word: commonWords[randomNumber],
+        word: this.promptWords[randomNumber],
       }
     },
   }
